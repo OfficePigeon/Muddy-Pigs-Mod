@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+	"#": "minecraft:dirt",
+	"B": "minecraft:water_bucket"
+  },
+  "pattern": [
+	"###",
+	"#B#",
+	"###"
+  ],
+  "result": {
+	"count": 1,
+	"id": "wich:mud_bucket"
+  }
+}

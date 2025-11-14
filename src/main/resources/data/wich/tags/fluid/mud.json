@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+	{ "id": "wich:still_mud", "required": false },
+	{ "id": "wich:flowing_mud", "required": false }
+  ]
+}

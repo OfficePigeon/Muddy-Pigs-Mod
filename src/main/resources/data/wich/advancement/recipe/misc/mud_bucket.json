@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": { "recipes": [ "wich:mud_bucket" ] },
+  "criteria": {
+	"has_bucket": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": { "items": [ { "items": "minecraft:bucket" } ] }
+	},
+	"has_dirt": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": { "items": [ { "items": "minecraft:dirt" } ] }
+	},
+	"has_the_recipe": {
+	  "trigger": "minecraft:recipe_unlocked",
+	  "conditions": { "recipe": "wich:mud_bucket" }
+	}
+  },
+  "requirements": [ [ "has_bucket", "has_dirt", "has_the_recipe" ] ]
+}

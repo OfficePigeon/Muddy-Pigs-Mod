@@ -1,0 +1,27 @@
+{
+  "entity.pig.muddy.shear": {
+	"sounds": [ "mob/sheep/shear" ],
+	"subtitle": "subtitles.item.shears.shear"
+  },
+  "entity.pig.muddy.bloom": {
+	"sounds": [
+	  "wich:mob/pig/bloom1",
+	  "wich:mob/pig/bloom2",
+	  "wich:mob/pig/bloom3"
+	],
+	"subtitle": "subtitles.entity.pig.muddy.bloom"
+  },
+  "entity.pig.muddy.wallow": {
+	"sounds": [
+	  { "name": "wich:mob/pig/wallow1", "volume": 0.7 },
+	  { "name": "wich:mob/pig/wallow2", "volume": 0.7 },
+	  { "name": "wich:mob/pig/wallow3", "volume": 0.7 },
+	  { "name": "wich:mob/pig/wallow4", "volume": 0.7 },
+	  { "name": "wich:mob/pig/wallow5", "volume": 0.7 },
+	  { "name": "wich:mob/pig/wallow6", "volume": 0.7 },
+	  { "name": "wich:mob/pig/wallow7", "volume": 0.7 },
+	  { "name": "wich:mob/pig/wallow8", "volume": 0.7 }
+	],
+	"subtitle": "subtitles.entity.pig.muddy.wallow"
+  }
+}
