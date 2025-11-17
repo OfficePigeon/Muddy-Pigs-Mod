@@ -2,7 +2,7 @@ package fun.wich.mixin.client;
 
 import com.google.common.collect.Maps;
 import fun.wich.MuddyPig;
-import fun.wich.client.ModClient;
+import fun.wich.client.MuddyPigClient;
 import fun.wich.client.MuddyPigFlowerFeatureRenderer;
 import fun.wich.client.MuddyPigMudFeatureRenderer;
 import fun.wich.client.MuddyPigRenderState;
@@ -44,9 +44,9 @@ public abstract class PigEntityRendererMixin extends MobEntityRenderer<PigEntity
 	private static Map<PigVariant.Model, BabyModelPair<PigEntityModel>> MuddyPig_CreateModelPairs(EntityRendererFactory.Context context) {
 		return Maps.newEnumMap(Map.of(
 				PigVariant.Model.NORMAL,
-				new BabyModelPair<>(new PigEntityModel(context.getPart(ModClient.MUDDY_PIG_MUD)), new PigEntityModel(context.getPart(ModClient.MUDDY_PIG_MUD_BABY))),
+				new BabyModelPair<>(new PigEntityModel(context.getPart(MuddyPigClient.MUDDY_PIG_MUD)), new PigEntityModel(context.getPart(MuddyPigClient.MUDDY_PIG_MUD_BABY))),
 				PigVariant.Model.COLD,
-				new BabyModelPair<>(new ColdPigEntityModel(context.getPart(ModClient.MUDDY_PIG_MUD_COLD)), new ColdPigEntityModel(context.getPart(ModClient.MUDDY_PIG_MUD_COLD_BABY)))
+				new BabyModelPair<>(new ColdPigEntityModel(context.getPart(MuddyPigClient.MUDDY_PIG_MUD_COLD)), new ColdPigEntityModel(context.getPart(MuddyPigClient.MUDDY_PIG_MUD_COLD_BABY)))
 		));
 	}
 }

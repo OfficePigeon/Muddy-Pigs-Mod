@@ -20,7 +20,7 @@ import net.minecraft.client.render.entity.model.PigEntityModel;
 import net.minecraft.util.Identifier;
 
 @Environment(EnvType.CLIENT)
-public class ModClient implements ClientModInitializer {
+public class MuddyPigClient implements ClientModInitializer {
 	//Mud
 	public static final EntityModelLayer MUDDY_PIG_MUD = MakeModelLayer("muddy_pig_mud");
 	public static final EntityModelLayer MUDDY_PIG_MUD_BABY = MakeModelLayer("muddy_pig_mud_baby");

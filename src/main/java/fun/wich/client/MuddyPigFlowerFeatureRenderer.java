@@ -19,7 +19,7 @@ public class MuddyPigFlowerFeatureRenderer extends FeatureRenderer<PigEntityRend
 	private final MuddyPigFlowerModel model;
 	public MuddyPigFlowerFeatureRenderer(FeatureRendererContext<PigEntityRenderState, PigEntityModel> context, LoadedEntityModels loader) {
 		super(context);
-		this.model = new MuddyPigFlowerModel(loader.getModelPart(ModClient.MUDDY_PIG_FLOWER));
+		this.model = new MuddyPigFlowerModel(loader.getModelPart(MuddyPigClient.MUDDY_PIG_FLOWER));
 	}
 	@Override
 	public void render(MatrixStack matrices, OrderedRenderCommandQueue queue, int light, PigEntityRenderState state, float limbAngle, float limbDistance) {
