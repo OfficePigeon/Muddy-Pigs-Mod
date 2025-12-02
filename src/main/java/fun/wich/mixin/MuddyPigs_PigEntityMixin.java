@@ -30,12 +30,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PigEntity.class)
-public abstract class PigEntityMixin extends AnimalEntity implements MuddyPig, Shearable {
+public abstract class MuddyPigs_PigEntityMixin extends AnimalEntity implements MuddyPig, Shearable {
 	@Unique	@SuppressWarnings("WrongEntityDataParameterClass")
 	private static final TrackedData<Integer> MUD = DataTracker.registerData(PigEntity.class, TrackedDataHandlerRegistry.INTEGER);
 	@Unique	@SuppressWarnings("WrongEntityDataParameterClass")
 	private static final TrackedData<Integer> FLOWER = DataTracker.registerData(PigEntity.class, TrackedDataHandlerRegistry.INTEGER);
-	protected PigEntityMixin(EntityType<? extends AnimalEntity> entityType, World world) { super(entityType, world); }
+	protected MuddyPigs_PigEntityMixin(EntityType<? extends AnimalEntity> entityType, World world) { super(entityType, world); }
 	@Unique	private static final int WET_MUD_TIME_DELAY = 600;
 	@Unique	private static final int FLOWER_DELAY = 200;
 	@Unique	private static final int FLOWER_ODDS = 100;

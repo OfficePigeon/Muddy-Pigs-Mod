@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PointedDripstoneBlock.class)
-public abstract class PointedDripstoneBlockMixin {
+public abstract class MuddyPigs_PointedDripstoneBlockMixin {
 	@Shadow private static Fluid getDripFluid(World world, Fluid fluid) { return null; }
 	@Shadow @Final private static double DOWN_TIP_Y;
 	@Inject(method="createParticle(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/fluid/Fluid;)V", at=@At("HEAD"), cancellable=true)

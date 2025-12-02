@@ -19,11 +19,11 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(CraftingResultSlot.class)
-public abstract class CraftingResultSlotMixin extends Slot {
+public abstract class MuddyPigs_CraftingResultSlotMixin extends Slot {
 	@Shadow protected abstract DefaultedList<ItemStack> getRecipeRemainders(CraftingRecipeInput input, World world);
 	@Shadow @Final private RecipeInputInventory input;
 	@Shadow @Final private PlayerEntity player;
-	public CraftingResultSlotMixin(Inventory inventory, int index, int x, int y) { super(inventory, index, x, y); }
+	public MuddyPigs_CraftingResultSlotMixin(Inventory inventory, int index, int x, int y) { super(inventory, index, x, y); }
 	@Inject(method = "onTakeItem", at = @At("HEAD"), cancellable=true)
 	private void RemoveRecipeRemainder_MuddyPigs_MudBucket(PlayerEntity player, ItemStack stack, CallbackInfo ci) {
 		if (stack.isOf(MuddyPigsMod.MUD_BUCKET)) {

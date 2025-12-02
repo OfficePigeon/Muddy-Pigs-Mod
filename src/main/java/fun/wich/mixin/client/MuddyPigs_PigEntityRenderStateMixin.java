@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
 @Mixin(PigEntityRenderState.class)
-public class PigEntityRenderStateMixin implements MuddyPigRenderState {
+public class MuddyPigs_PigEntityRenderStateMixin implements MuddyPigRenderState {
 	@Unique	private MuddyPigMud mud = MuddyPigMud.CLEAN;
 	@Unique	private MuddyPigFlower flower = null;
 	@Override public MuddyPigMud MuddyPig_GetMud() { return this.mud; }

@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LavaFluid.class)
-public abstract class LavaFluidMixin extends FlowableFluid {
+public abstract class MuddyPigs_LavaFluidMixin extends FlowableFluid {
 	@Shadow protected abstract void playExtinguishEvent(WorldAccess world, BlockPos pos);
 	@Inject(method="flow", at=@At("HEAD"), cancellable=true)
 	private void LavaFluidMixin_flow(WorldAccess world, BlockPos pos, BlockState state, Direction direction, FluidState fluidState, CallbackInfo ci) {

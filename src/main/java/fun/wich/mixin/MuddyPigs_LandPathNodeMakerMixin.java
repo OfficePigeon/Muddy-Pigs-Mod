@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(LandPathNodeMaker.class)
-public class LandPathNodeMakerMixin {
+public class MuddyPigs_LandPathNodeMakerMixin {
 	@Redirect(method="getStart()Lnet/minecraft/entity/ai/pathing/PathNode;", at=@At(value="INVOKE", target="Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z"))
 	private boolean TreatMudAsWaterInGetStart(BlockState instance, Block block) {
 		if (block == Blocks.WATER && instance.isOf(MuddyPigsMod.MUD_FLUID_BLOCK)) return true;

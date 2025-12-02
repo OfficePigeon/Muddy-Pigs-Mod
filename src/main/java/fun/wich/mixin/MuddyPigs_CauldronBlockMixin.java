@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(CauldronBlock.class)
-public class CauldronBlockMixin {
+public class MuddyPigs_CauldronBlockMixin {
 	@Inject(method="fillFromDripstone", at=@At("HEAD"), cancellable=true)
 	private void FillFromDripstone(BlockState state, World world, BlockPos pos, Fluid fluid, CallbackInfo ci) {
 		if (fluid != MuddyPigsMod.STILL_MUD_FLUID) return;

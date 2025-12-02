@@ -18,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Entity.class)
-public abstract class EntityMixin implements EntityTouchingMud {
+public abstract class MuddyPigs_EntityMixin implements EntityTouchingMud {
 	@Shadow public abstract boolean updateMovementInFluid(TagKey<Fluid> tag, double speed);
 	@Unique private boolean isTouchingMud;
 	public boolean EntityInMud_IsTouchingMud() { return this.isTouchingMud; }

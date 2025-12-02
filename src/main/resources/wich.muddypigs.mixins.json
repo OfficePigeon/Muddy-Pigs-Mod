@@ -3,14 +3,14 @@
   "package": "fun.wich.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-	"CauldronBlockMixin",
-	"CraftingResultSlotMixin",
-	"EntityMixin",
-	"LandPathNodeMakerMixin",
-	"LavaFluidMixin",
-	"MobNavigationMixin",
-	"PigEntityMixin",
-	"PointedDripstoneBlockMixin"
+	"MuddyPigs_CauldronBlockMixin",
+	"MuddyPigs_CraftingResultSlotMixin",
+	"MuddyPigs_EntityMixin",
+	"MuddyPigs_LandPathNodeMakerMixin",
+	"MuddyPigs_LavaFluidMixin",
+	"MuddyPigs_MobNavigationMixin",
+	"MuddyPigs_PigEntityMixin",
+	"MuddyPigs_PointedDripstoneBlockMixin"
   ],
   "injectors": {
 	"defaultRequire": 1
@@ -19,8 +19,8 @@
 	"requireAnnotations": true
   },
   "client": [
-	"client.FogRendererMixin",
-	"client.PigEntityRendererMixin",
-	"client.PigEntityRenderStateMixin"
+	"client.MuddyPigs_FogRendererMixin",
+	"client.MuddyPigs_PigEntityRendererMixin",
+	"client.MuddyPigs_PigEntityRenderStateMixin"
   ]
 }

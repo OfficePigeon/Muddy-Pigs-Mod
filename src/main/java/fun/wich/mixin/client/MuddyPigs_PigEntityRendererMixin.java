@@ -24,8 +24,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.Map;
 
 @Mixin(PigEntityRenderer.class)
-public abstract class PigEntityRendererMixin extends MobEntityRenderer<PigEntity, PigEntityRenderState, PigEntityModel> {
-	public PigEntityRendererMixin(EntityRendererFactory.Context context, PigEntityModel entityModel, float f) { super(context, entityModel, f); }
+public abstract class MuddyPigs_PigEntityRendererMixin extends MobEntityRenderer<PigEntity, PigEntityRenderState, PigEntityModel> {
+	public MuddyPigs_PigEntityRendererMixin(EntityRendererFactory.Context context, PigEntityModel entityModel, float f) { super(context, entityModel, f); }
 	@Inject(method="<init>", at=@At("TAIL"))
 	private void MuddyPig_InjectModelFeatures(EntityRendererFactory.Context context, CallbackInfo ci) {
 		this.addFeature(new MuddyPigMudFeatureRenderer(this, MuddyPig_CreateModelPairs(context)));
