@@ -4,6 +4,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
 	"MuddyPigs_CauldronBlockMixin",
+	"MuddyPigs_CrafterBlockMixin",
 	"MuddyPigs_CraftingResultSlotMixin",
 	"MuddyPigs_EntityMixin",
 	"MuddyPigs_LandPathNodeMakerMixin",
