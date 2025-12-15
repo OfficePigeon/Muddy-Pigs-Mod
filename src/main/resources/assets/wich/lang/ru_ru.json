@@ -1,0 +1,9 @@
+{
+    "subtitles.entity.pig.muddy.bloom": "Свинья цветёт",
+    "subtitles.entity.pig.muddy.wallow": "Свинья валяется",
+    "block.wich.mud": "Грязь",
+    "block.wich.mud_cauldron": "Котёл с грязью",
+    "block.wich.mud_fluid": "Грязь",
+    "item.wich.mud_bucket": "Ведро с грязью",
+    "modmenu.descriptionTranslation.wich_muddy-pigs": "Добавляет грязных свиней, вдохновленных Minecraft Earth."
+}
